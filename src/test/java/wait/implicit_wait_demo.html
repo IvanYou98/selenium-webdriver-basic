@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Implicit Wait Demo</title>
+  <style>
+    .container {
+      margin-top: 100px;
+      margin-left: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="container">
+  </div>
+<script>
+  setTimeout(() => {
+    document.getElementById("container").innerHTML += "<div id='msg1'>First Message</div>"
+  }, 1000)
+  setTimeout(() => {
+    document.getElementById("container").innerHTML += "<div id='msg2'>Second Message</div>"
+  }, 2000)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup with Input</title>
+</head>
+<body>
+<button onclick="myFunction()" id="btn">Click Me!</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        let name = prompt("Please tell me your name: ");
+        document.getElementById("demo").innerText = "Hello " + name + "!";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explicit Wait Demo</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button id="btn" onclick="clickHandler()">Click me!</button>
+    <div id="content"></div>
+</div>
+
+<script>
+    function clickHandler() {
+        console.log("clicked!")
+        setTimeout(() => document.getElementById("content").innerHTML = "<div id = 'msg'>Hello World!</div>"
+            , 3000)
+    }
+</script>
+</body>
+</html>
